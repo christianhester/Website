@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+*::selection {
+  color: white;
+  background: black;
+}
+
+html, body {
+  height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  transition: height 0.15s ease-in-out;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  cursor: pointer;
+}
+section:first-child, section:nth-child(2) {
+  color: #db3e4f;
+}
+section:nth-child(3), section:nth-child(4) {
+  color: #fff3ce;
+}
+section .x {
+  font-size: 1.5em;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: none;
+}
+section .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 0.8em;
+}
+section p, section h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 700;
+  transition: top 0.15s ease-in-out 0.3s;
+}
+
+h1 {
+  margin: 0;
+}
+
+.d a:link, .d a:visited {
+  padding: 1em;
+  background-color: #db3e4f;
+  color: #fff3ce;
+  transition: background-color 0.05s ease-in-out, color 0.05s ease-in-out;
+}
+
+.d a:hover, .c a:hover {
+  background-color: #fbd036;
+  color: #db3e4f;
+}
+
+.a {
+  background-color: #fff3ce;
+}
+
+.b {
+  background-color: #fbd036;
+}
+
+.c {
+  background-color: #db3e4f;
+}
+.c ul {
+  list-style-type: none;
+}
+.c ul li {
+  positon: relative;
+  margin: 1.5em 5px;
+  display: block;
+}
+.c a:link, .c a:visited {
+  padding: 0.5em;
+  font-size: 1em;
+  background-color: #fbd036;
+  color: #db3e4f;
+  transition: background-color 0.05s ease-in-out, color 0.05s ease-in-out;
+}
+.c a:hover {
+  background-color: #00d1aa;
+  color: #fff3ce;
+}
+
+.d {
+  background-color: #00d1aa;
+}
+.d a:link, .d a:visited {
+  font-size: 1.5em;
+}
+.hover {
+  height: 40%;
+}
+
+.unhover {
+  height: 20%;
+}
+
+.click {
+  height: 100%;
+  cursor: default;
+}
+.click p, .click h1 {
+  top: 25%;
+}
+.click h1 {
+  top: 50%;
+}
+
+.unclick {
+  height: 0%;
+}
+.unclick p, .unclick h1 {
+  opacity: 0;
+}
