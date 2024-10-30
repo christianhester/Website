@@ -1,70 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Christian Hester</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<link rel="icon" type="image/x-icon" href="christianhester.github.io/favicon.ico">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="christianhester.github.io/favicon.ico">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- / andreasgillstrom.se -->
-<section class='a'>
-  <h1>
-    Christian Hester
-  </h1>
-  <div class='x'>
-    &#215;
-  </div>
-</section>
-<section class='b'>
-  <p>
-    About me
-  </p>
-  <div class='content'>
-    Hi, I'm Christian Hester, a computer networking enthusiast and Cloud Support Associate at Amazon Web Services. I graduated from Louisiana Tech University with a Bachelor of Science degree in Computer Information Systems, and since then, I've been exploring various aspects of the tech industry. My passion lies in computer networking, and I've been lucky enough to pursue that interest in my current role
-  </div>
-  <div class='x'>
-    &#215;
-  </div>
-</section>
-<section class='c'>
-  <p>
-    Find me
-  </p>
-  <div class='content'>
-    <ul>
-      <li>
-        <a href='https://www.linkedin.com/in/christianhesterit/' target='_blank'>
-          Linkedin
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class='x'>
-    &#215;
-  </div>
-</section>
-<section class='d'>
-  <p>
-    Contact me
-  </p>
-  <div class='content'>
-    <a href='mailto:wmchristianhester@gmail.com'>
-      wmchristianhester@gmail.com
-    </a>
-  </div>
-  <div class='x'>
-    &#215;
-  </div>
-</section>
-<!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
+<div class="container" id="draggableContainer">
+    <div class="title-bar">
+        <span class="title">My Personal Site</span>
+        <span class="close-btn" onclick="closeWindow()">X</span>
+    </div>
+    <div class="content">
+        <h1>Christian Hester</h1>
+        <p>Welcome to my personal website! Here you can learn a bit about me and what I enjoy working on.</p>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I'm a cloud support engineer with a passion for networking, automation, and web development. In my free time, I love experimenting with new tech, hiking, and spending time with my family.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via <a href="mailto:me@christianhester.com">email</a> or connect on <a href="https://www.linkedin.com/in/christianhesterit/">LinkedIn</a>.</p>
+            <span class="blinking-cursor">_</span>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Christian Hester.
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
