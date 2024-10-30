@@ -1,136 +1,40 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
-*::selection {
-  color: white;
-  background: black;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="christianhester.github.io/favicon.ico">
+</head>
+<body>
 
-html, body {
-  height: 100%;
-}
+<div class="container" id="draggableContainer">
+    <div class="title-bar">
+        <span class="title">My Personal Site</span>
+        <span class="close-btn" onclick="closeWindow()">X</span>
+    </div>
+    <div class="content">
+        <h1>Christian Hester</h1>
+        <p>Welcome to my personal website! Here you can learn a bit about me and what I enjoy working on.</p>
 
-section {
-  position: relative;
-  width: 100%;
-  height: 25%;
-  transition: height 0.15s ease-in-out;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  cursor: pointer;
-}
-section:first-child, section:nth-child(2) {
-  color: #db3e4f;
-}
-section:nth-child(3), section:nth-child(4) {
-  color: #fff3ce;
-}
-section .x {
-  font-size: 3.5em;
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  padding: 10px 10px;
-  cursor: pointer;
-  display: none;
-}
-section .content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  font-size: 0.8em;
-}
-section p, section h1 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2em;
-  font-weight: 700;
-  transition: top 0.15s ease-in-out 0.3s;
-}
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I'm a cloud support engineer with a passion for networking, automation, and web development. In my free time, I love experimenting with new tech, hiking, and spending time with my family.</p>
+        </div>
 
-h1 {
-  margin: 0;
-}
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via <a href="mailto:me@christianhester.com">email</a> or connect on <a href="https://www.linkedin.com/in/christianhesterit/">LinkedIn</a>.</p>
+            <span class="blinking-cursor">_</span>
+        </div>
 
-.d a:link, .d a:visited {
-  padding: 1em;
-  background-color: #db3e4f;
-  color: #fff3ce;
-  transition: background-color 0.05s ease-in-out, color 0.05s ease-in-out;
-}
+        <div class="footer">
+            &copy; 2024 Christian Hester.
+        </div>
+    </div>
+</div>
 
-.d a:hover, .c a:hover {
-  background-color: #fbd036;
-  color: #db3e4f;
-}
-
-.a {
-  background-color: #fff3ce;
-}
-
-.b {
-  background-color: #fbd036;
-}
-
-.c {
-  background-color: #db3e4f;
-}
-.c ul {
-  list-style-type: none;
-}
-.c ul li {
-  positon: relative;
-  margin: 1.5em 5px;
-  display: block;
-}
-.c a:link, .c a:visited {
-  padding: 0.5em;
-  font-size: 1em;
-  background-color: #fbd036;
-  color: #db3e4f;
-  transition: background-color 0.05s ease-in-out, color 0.05s ease-in-out;
-}
-.c a:hover {
-  background-color: #00d1aa;
-  color: #fff3ce;
-}
-
-.d {
-  background-color: #00d1aa;
-}
-.d a:link, .d a:visited {
-  font-size: 1.5em;
-}
-.hover {
-  height: 40%;
-}
-
-.unhover {
-  height: 20%;
-}
-
-.click {
-  height: 100%;
-  cursor: default;
-}
-.click p, .click h1 {
-  top: 25%;
-}
-.click h1 {
-  top: 50%;
-}
-
-.unclick {
-  height: 0%;
-}
-.unclick p, .unclick h1 {
-  opacity: 0;
-}
+<script src="script.js"></script>
+</body>
+</html>
